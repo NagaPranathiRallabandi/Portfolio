@@ -1,0 +1,36 @@
+career objective
+AI-focused Computer Science student specializing in Artificial Intelligence and Machine Learning, with hands-on experience in Computer Vision and full-stack development. Seeking to apply technical skills in building intelligent, real-world automation systems.
+certifications
+Full-Stack Web Dev with  HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps
+Completed
++91-9000386576
+nagapranathi.rallabandi@gmail.com
+naga-pranathi-rallabandi-7ab745280
+NagaPranathiRallabandi
+Pranathi Rallabandi
+PROJECTS
+Built an end-to-end journal management system to allow authors to submit manuscripts and editors to manage submissions from a single dashboard.
+Integrated automated email notifications and Google Drive document storage to streamline editorial workflow and communication. 
+Tech stack: React.js, Vite, Tailwind CSS, Node.js, Express.js, MongoDB Atlas, JWT, Nodemailer, Google Drive API, Vercel, Render
+Live Demo: frontiersespi.com
+Frontier ESPI – Research Journal Management Portal | Ongoing
+College Website Management System
+Implemented a role-based content management system to allow administrators and department heads to manage notices, events, faculty profiles, galleries and institutional information through dedicated dashboards.
+Developed secure authentication, cloud-based media handling, and real-time content updates for efficient website maintenance.
+Tech stack: React.js, Vite, Tailwind CSS, Node.js, Express.js, MongoDB Atlas, JWT, Cloudinary, Google Drive API, Vercel, Render.
+Live Demo: www.nriit.edu.in/autonomous
+Say Whaat – Donation Tracking & Logistics Management Platform
+Developed an end-to-end donation management platform to track donation lifecycles, organise logistics, and improve transparency through donation pools, batching, and proof-of-delivery workflows.
+Implemented NFC-based item tracking, AWS S3-backed delivery proof uploads, and real-time notifications to keep donors and stakeholders informed throughout the distribution process.
+Tech Stack: React.js, Tailwind CSS, React Query, Axios, Node.js, Express.js, MongoDB Atlas, Mongoose, JWT, Firebase, AWS S3, Multer, Nodemailer, Web Push, Vercel, Render.
+Live Demo: www.say-whaat.vercel.app
+Python, Javascript, Node.js, Express.js, ReactJs, Java
+Skills
+English, Hindi, Telugu
+Language
+Education
+Nri Institute of Technology
+2023 - Present
+Bachelor of Technology
+Computer Science and Engineering specialized in Artificial Intelligence and Machine Learning
+GPA - 9.0

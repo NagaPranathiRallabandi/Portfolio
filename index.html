@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranathi Rallabandi | AI/ML & Full-Stack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Interactive Neural Network / GNN Background -->
+    <canvas id="gnn-background"></canvas>
+
+    <!-- Sticky Glassmorphic Navbar -->
+    <nav class="glass-navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>PRANATHI RALLABANDI<span class="logo-accent"> /&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="hero-content glass-panel">
+            <div class="badge-container">
+                <span class="glow-badge"><i class="ri-cpu-line"></i> AI/ML Specialist</span>
+                <span class="glow-badge"><i class="ri-code-s-slash-line"></i> Full-Stack Developer</span>
+            </div>
+            <h1 class="hero-title">HEY, I'M <span class="gradient-text">PRANATHI RALLABANDI</span></h1>
+            <p class="hero-subtitle">
+                An AI-focused Computer Science student specializing in Artificial Intelligence and Machine Learning, 
+                with hands-on experience in Computer Vision and full-stack development. Dedicated to building intelligent, 
+                real-world automation systems.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary"><i class="ri-folders-line"></i> View Projects</a>
+                <a href="#contact" class="btn btn-secondary"><i class="ri-mail-send-line"></i> Let's Connect</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/naga-pranathi-rallabandi-7ab745280/" target="_blank" title="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+                <a href="https://github.com/NagaPranathiRallabandi" target="_blank" title="GitHub"><i class="ri-github-line"></i></a>
+                <a href="mailto:nagapranathi.rallabandi@gmail.com" title="Email"><i class="ri-mail-line"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+
+        <!-- About Section -->
+        <section id="about" class="section-container">
+            <h2 class="section-title"><i class="ri-user-3-line"></i> About Me</h2>
+            <div class="about-grid">
+                <!-- Profile & Summary Card -->
+                <div class="glass-panel profile-card">
+                    <div class="profile-img-container">
+                        <img src="./images/photo.jpg" alt="Pranathi Rallabandi" class="profile-photo">
+                    </div>
+                    <h3>Pranathi Rallabandi</h3>
+                    <p class="profile-desc">
+                        Hi! I am a passionate tech explorer, pursuing my studies in Computer Science and Engineering with a deep focus on AI/ML. 
+                        I bridge the gap between complex algorithmic systems (like Graph Neural Networks) and production-ready full-stack applications.
+                    </p>
+                    <div class="stat-row">
+                        <div class="stat-item">
+                            <span class="stat-val">9.0</span>
+                            <span class="stat-label">B.Tech GPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val">1</span>
+                            <span class="stat-label">Published Patent</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Details Column -->
+                <div class="details-column">
+                    <!-- Education Card -->
+                    <div class="glass-panel card-hover">
+                        <h4 class="card-heading"><i class="ri-graduation-cap-line text-accent"></i> Education</h4>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2023 - Present</span>
+                            <h5 class="timeline-title">Bachelor of Technology in Computer Science & Engineering</h5>
+                            <p class="timeline-subtitle">Specialized in Artificial Intelligence and Machine Learning</p>
+                            <p class="timeline-institution">NRI Institute of Technology | GPA: 9.0</p>
+                        </div>
+                    </div>
+
+                    <!-- Achievements & Certifications Card -->
+                    <div class="glass-panel card-hover mt-4">
+                        <h4 class="card-heading"><i class="ri-trophy-line text-accent"></i> Achievements & Certifications</h4>
+                        <ul class="styled-list">
+                            <li>
+                                <i class="ri-award-line list-icon"></i>
+                                <span><strong>2nd Prize – Innovarix, Ameya’25</strong> (SRM University-AP) for Green Circuit</span>
+                            </li>
+                            <li>
+                                <i class="ri-award-line list-icon"></i>
+                                <span><strong>Finalist – DataVortex SkyIntellect Hackfest 2025</strong> (KL University) for MARG AI</span>
+                            </li>
+                            <li>
+                                <i class="ri-medal-line list-icon"></i>
+                                <span><strong>Udemy Certification:</strong> Full-Stack Web Development (HTML, CSS, JS, Node.js, React, PostgreSQL, Web3, DApps)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-container">
+            <h2 class="section-title"><i class="ri-tools-line"></i> Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Category Card -->
+                <div class="glass-panel skill-category card-hover">
+                    <h3><i class="ri-code-line text-accent"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Category Card -->
+                <div class="glass-panel skill-category card-hover">
+                    <h3><i class="ri-brain-line text-accent"></i> AI / ML & Vision</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Graph Neural Networks (GCN/GAT)</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Knowledge Graphs</span>
+                        <span class="skill-tag">NetworkX</span>
+                        <span class="skill-tag">TensorFlow Lite</span>
+                        <span class="skill-tag">Google ML Kit</span>
+                        <span class="skill-tag">XAI (Explainable AI)</span>
+                        <span class="skill-tag">LBPH Face Recognizer</span>
+                    </div>
+                </div>
+
+                <!-- Category Card -->
+                <div class="glass-panel skill-category card-hover">
+                    <h3><i class="ri-global-line text-accent"></i> Full-Stack & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Vite</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">MongoDB Atlas</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Google Drive API</span>
+                        <span class="skill-tag">Cloudinary</span>
+                        <span class="skill-tag">Web Push</span>
+                    </div>
+                </div>
+
+                <!-- Category Card -->
+                <div class="glass-panel skill-category card-hover">
+                    <h3><i class="ri-user-settings-line text-accent"></i> Core & Other</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">JWT Authentication</span>
+                        <span class="skill-tag">NFC-based tracking</span>
+                        <span class="skill-tag">Tkinter GUI</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                    </div>
+                    <h4 class="mt-3" style="font-size: 0.95rem; opacity: 0.85;"><i class="ri-translate-2 text-accent"></i> Languages Spoken</h4>
+                    <div class="skill-tags mt-1">
+                        <span class="skill-tag-simple">English</span>
+                        <span class="skill-tag-simple">Hindi</span>
+                        <span class="skill-tag-simple">Telugu</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-container">
+            <div class="projects-header">
+                <h2 class="section-title"><i class="ri-folder-open-line"></i> Featured Projects</h2>
+                <p class="section-subtitle-desc">A selection of research innovations, full-stack systems, and AI modules.</p>
+            </div>
+            
+            <div class="projects-list">
+                
+                <!-- Project 1: Patent -->
+                <div class="glass-panel project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./images/projects/educational_recommendation.png" alt="GNN-Based Explainable Educational Recommendation System" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-type-tag"><i class="ri-git-repository-line"></i> Published Patent</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="patent-tag"><i class="ri-file-shield-2-line"></i> Patent App: 202541086955 (2025)</span>
+                        </div>
+                        <h3>GNN-Based Explainable Educational Recommendation System</h3>
+                        <p class="project-description">
+                            Designed and implemented a knowledge graph-driven educational recommendation system integrating learner goals, concept relationships, and prerequisite/resource dependencies.
+                        </p>
+                        <ul class="project-bullet-details">
+                            <li>Built a Graph Neural Network-based framework (GCN/GAT) to perform multi-hop reasoning on learner-resource graphs and generate personalized resource recommendations.</li>
+                            <li>Added an explainability layer for interpretable recommendation paths and a feedback-based graph update mechanism to continuously improve recommendation quality.</li>
+                        </ul>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PyTorch</span>
+                            <span class="tech-badge">GCN</span>
+                            <span class="tech-badge">GAT</span>
+                            <span class="tech-badge">Knowledge Graphs</span>
+                            <span class="tech-badge">NetworkX</span>
+                            <span class="tech-badge">XAI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Say Whaat -->
+                <div class="glass-panel project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./images/projects/say_whaat.png" alt="Say Whaat Donation Tracking Platform" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-type-tag"><i class="ri-app-store-line"></i> Web & Mobile System</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="status-tag ongoing"><i class="ri-checkbox-circle-line"></i> Active Platform</span>
+                        </div>
+                        <h3>Say Whaat – Donation Tracking & Logistics Management</h3>
+                        <p class="project-description">
+                            An end-to-end donation tracking and distribution platform featuring a React portal for donors/admins and a Flutter app for field staff, ensuring transparency from registration to delivery.
+                        </p>
+                        <ul class="project-bullet-details">
+                            <li>Developed an offline face verification pipeline in the Flutter app using Google ML Kit and MobileFaceNet (TensorFlow Lite) for secure authentication in low-connectivity zones.</li>
+                            <li>Implemented NFC-based item tracking, AWS S3-backed delivery proofs, real-time push notifications, and verified proof-of-delivery workflows.</li>
+                        </ul>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">TFLite</span>
+                            <span class="tech-badge">Google ML Kit</span>
+                            <span class="tech-badge">AWS S3</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">NFC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.say-whaat.vercel.app" target="_blank" class="project-link-btn"><i class="ri-external-link-line"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Frontier ESPI -->
+                <div class="glass-panel project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./images/projects/frontiersespi.png" alt="Frontier ESPI Journal Portal" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-type-tag"><i class="ri-pages-line"></i> Web Application</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="status-tag active"><i class="ri-time-line"></i> Ongoing</span>
+                        </div>
+                        <h3>Frontier ESPI – Research Journal Management Portal</h3>
+                        <p class="project-description">
+                            Built an end-to-end journal management system permitting authors to submit manuscripts and editors to manage submissions and peer review processes from a single dashboard.
+                        </p>
+                        <ul class="project-bullet-details">
+                            <li>Integrated automated email notifications with Nodemailer to notify users of manuscript status updates instantly.</li>
+                            <li>Integrated Google Drive API for secure document storage and streamlined document flows for editors.</li>
+                        </ul>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">Vite</span>
+                            <span class="tech-badge">Tailwind CSS</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Express.js</span>
+                            <span class="tech-badge">MongoDB Atlas</span>
+                            <span class="tech-badge">Google Drive API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://frontiersespi.com" target="_blank" class="project-link-btn"><i class="ri-external-link-line"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: College Website -->
+                <div class="glass-panel project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./images/projects/college_website.png" alt="College Website Management System" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-type-tag"><i class="ri-macbook-line"></i> Portal Platform</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="status-tag active"><i class="ri-checkbox-circle-line"></i> Deployed</span>
+                        </div>
+                        <h3>College Website Management System</h3>
+                        <p class="project-description">
+                            Implemented a role-based content management system for administrators and department heads to manage events, notices, faculty profiles, galleries, and institutional info.
+                        </p>
+                        <ul class="project-bullet-details">
+                            <li>Developed secure JWT authentication, cloud-based media handling with Cloudinary, and real-time updates.</li>
+                            <li>Created dedicated control panels optimized for department-level information distribution.</li>
+                        </ul>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">Vite</span>
+                            <span class="tech-badge">Tailwind CSS</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB Atlas</span>
+                            <span class="tech-badge">Cloudinary</span>
+                            <span class="tech-badge">Google Drive API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.nriit.edu.in/autonomous" target="_blank" class="project-link-btn"><i class="ri-external-link-line"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Smart Attendance -->
+                <div class="glass-panel project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./images/projects/smart_attendance.png" alt="Smart Attendance System with Real-Time Face Recognition" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-type-tag"><i class="ri-eye-line"></i> Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="status-tag completed"><i class="ri-checkbox-circle-line"></i> Completed</span>
+                        </div>
+                        <h3>Smart Attendance System with Real-Time Face Recognition</h3>
+                        <p class="project-description">
+                            Developed a real-time attendance tracking system using computer vision-based face recognition to automate student identification and attendance logging.
+                        </p>
+                        <ul class="project-bullet-details">
+                            <li>Built recognition workflow with OpenCV and LBPHFaceRecognizer, covering dataset collection, training, live detection, and real-time marking.</li>
+                            <li>Designed a clean Tkinter GUI for admin registration and student attendance management, logged directly into CSV formats.</li>
+                        </ul>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">Tkinter</span>
+                            <span class="tech-badge">LBPH Recognizer</span>
+                            <span class="tech-badge">CSV Logging</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer-section">
+        <div class="footer-content glass-panel">
+            <h2>Let's Build Something Smarter Together</h2>
+            <p>I'm always open to discussing AI systems integration, Web applications, or collaborative research. Reach out!</p>
+            
+            <div class="contact-details">
+                <a href="mailto:nagapranathi.rallabandi@gmail.com" class="contact-card card-hover">
+                    <i class="ri-mail-send-line"></i>
+                    <span>nagapranathi.rallabandi@gmail.com</span>
+                </a>
+                <a href="tel:+91-9000386576" class="contact-card card-hover">
+                    <i class="ri-phone-line"></i>
+                    <span>+91 90003 86576</span>
+                </a>
+            </div>
+
+            <div class="footer-social-links">
+                <a href="https://www.linkedin.com/in/naga-pranathi-rallabandi-7ab745280/" target="_blank"><i class="ri-linkedin-box-fill"></i> LinkedIn</a>
+                <a href="https://github.com/NagaPranathiRallabandi" target="_blank"><i class="ri-github-fill"></i> GitHub</a>
+                <a href="https://twitter.com/PranathiRN1234" target="_blank"><i class="ri-twitter-x-fill"></i> Twitter-X</a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2026 Pranathi Rallabandi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Background Canvas & Interactions -->
+    <script>
+        // Interactive Graph/GNN Particle Background Script
+        const canvas = document.getElementById('gnn-background');
+        const ctx = canvas.getContext('2d');
+
+        let particles = [];
+        const maxParticles = 90;
+        const connectionDistance = 120;
+        let mouse = { x: null, y: null, radius: 150 };
+
+        function initCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.8;
+                this.vy = (Math.random() - 0.5) * 0.8;
+                this.radius = Math.random() * 2 + 1.5;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(103, 132, 255, 0.7)';
+                ctx.fill();
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                // Bounce boundaries
+                if (this.x < 0 || this.x > canvas.width) this.vx = -this.vx;
+                if (this.y < 0 || this.y > canvas.height) this.vy = -this.vy;
+
+                // Mouse interaction (repel slightly or float near)
+                if (mouse.x !== null && mouse.y !== null) {
+                    const dx = this.x - mouse.x;
+                    const dy = this.y - mouse.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < mouse.radius) {
+                        const force = (mouse.radius - dist) / mouse.radius;
+                        const angle = Math.atan2(dy, dx);
+                        this.x += Math.cos(angle) * force * 1.2;
+                        this.y += Math.sin(angle) * force * 1.2;
+                    }
+                }
+            }
+        }
+
+        function createParticles() {
+            particles = [];
+            for (let i = 0; i < maxParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw and update particles
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+
+            // Draw connection lines (edges of neural network/graph)
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < connectionDistance) {
+                        const alpha = (connectionDistance - dist) / connectionDistance * 0.28;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(168, 85, 247, ${alpha})`; // Violet/purple edge
+                        ctx.lineWidth = 0.8;
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            // Draw connections to mouse
+            if (mouse.x !== null && mouse.y !== null) {
+                particles.forEach(p => {
+                    const dx = p.x - mouse.x;
+                    const dy = p.y - mouse.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < mouse.radius) {
+                        const alpha = (mouse.radius - dist) / mouse.radius * 0.22;
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(mouse.x, mouse.y);
+                        ctx.strokeStyle = `rgba(59, 130, 246, ${alpha})`; // Blue interactive edge
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                });
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', () => {
+            initCanvas();
+            createParticles();
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+
+        window.addEventListener('mouseleave', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+
+        initCanvas();
+        createParticles();
+        animate();
+
+        // Responsive Navigation Menu Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                navToggle.classList.toggle('toggle-active');
+            });
+        }
+
+        // Close nav when list link clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('nav-active');
+                if (navToggle) navToggle.classList.remove('toggle-active');
+            });
+        });
+    </script>
+</body>
+</html>

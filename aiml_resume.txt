@@ -1,0 +1,48 @@
+CAREER OBJECTIVE
+AI-focused Computer Science student specializing in Artificial Intelligence and Machine Learning, with handson experience in Computer Vision and full-stack development. Seeking to apply technical skills in building
+intelligent, real-world automation systems.
+ACHIEVEMENTS & CERTIFICATIONS
+2nd Prize – Innovarix, Ameya’25 (SRM University-AP) for Green Circuit
+Finalist – DataVortex SkyIntellect Hackfest 2025 (KL University) for MARG AI
+Udemy Certification – Full-Stack Web Development (HTML, CSS, JavaScript, Node.js, React, PostgreSQL,
+Web3, DApps).
++91-9000386576 nagapranathi.rallabandi@gmail.com naga-pranathi-rallabandi-7ab745280 NagaPranathiRallabandi
+Pranathi Rallabandi
+PROJECTS
+Python, PyTorch, GCN, GAT, Knowledge Graphs, NetworkX, Pandas, XAI
+Designed and implemented a knowledge graph-driven educational recommendation system integrating
+learner goals, concept relationships, and prerequisite/resource dependencies.
+Built a Graph Neural Network-based framework (GCN/GAT) to perform multi-hop reasoning on learnerresource graphs and generate personalized resource recommendations.
+Added an explainability layer for interpretable recommendation paths and a feedback-based graph
+update mechanism to continuously improve recommendation quality.
+Application No: 202541086955 | Year: 2025
+GNN-Based Explainable Educational Recommendation System (Published Patent)
+Say-Whaat – Donation Tracking & Distribution Platform
+React, Flutter, Node.js, Express.js, MongoDB, TensorFlow Lite, Google ML Kit
+Collaborated in a team to build a donation tracking and distribution platform with a React web portal for
+donor/admin workflows and a Flutter Batch Staff app for field operations, enabling end-to-end tracking
+of donated items from registration to delivery.
+Developed the offline face verification pipeline in the Flutter app using Google ML Kit and
+MobileFaceNet (TFLite) for on-device face detection, embedding extraction, and similarity-based
+identity verification in low-connectivity environments.
+Integrated the mobile verification workflow with the platform’s backend and proof-tracking pipeline,
+supporting secure staff/recipient authentication and transparent delivery verification across the system.
+Smart Attendance System with Real-Time Face Recognition
+Python, OpenCV, Tkinter, LBPH Face Recognizer
+Developed a real-time attendance tracking system using computer vision-based face recognition to
+automate student identification and attendance recording.
+Built the recognition workflow with OpenCV and LBPHFaceRecognizer, covering face dataset collection,
+training, live detection, and attendance marking.
+Designed a Tkinter GUI for registration and attendance management, with CSV-based logging for record
+maintenance and retrieval.
+EDUCATION
+Nri Institute of Technology
+2023 - Present
+Bachelor of Technology
+Computer Science and Engineering specialized in Artificial Intelligence and
+Machine Learning
+GPA - 9.0
+SKILLS
+Python, Javascript, Node.js, Express.js, ReactJs, Java
+LANGUAGE
+English, Hindi, Telugu
