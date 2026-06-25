@@ -210,7 +210,14 @@
                 <!-- Project 1: Patent -->
                 <div class="glass-panel project-card">
                     <div class="project-img-wrapper">
-                        <img src="./images/projects/educational_recommendation.png" alt="GNN-Based Explainable Educational Recommendation System" class="project-img">
+                        <div class="project-carousel" data-carousel>
+                            <div class="project-carousel-slides">
+                                <img src="./images/projects/patent.jpeg" alt="GNN-Based Explainable Educational Recommendation System" class="project-img">
+                            </div>
+                            <button class="carousel-btn prev-btn" data-carousel-btn="prev" aria-label="Previous"><i class="ri-arrow-left-s-line"></i></button>
+                            <button class="carousel-btn next-btn" data-carousel-btn="next" aria-label="Next"><i class="ri-arrow-right-s-line"></i></button>
+                            <div class="carousel-dots"></div>
+                        </div>
                         <div class="project-overlay">
                             <span class="project-type-tag"><i class="ri-git-repository-line"></i> Published Patent</span>
                         </div>
@@ -242,7 +249,14 @@
                 <!-- Project 2: Say Whaat -->
                 <div class="glass-panel project-card">
                     <div class="project-img-wrapper">
-                        <img src="./images/projects/say_whaat.png" alt="Say Whaat Donation Tracking Platform" class="project-img">
+                        <div class="project-carousel" data-carousel>
+                            <div class="project-carousel-slides">
+                                <img src="./images/projects/sayWhaat.png" alt="Say Whaat Donation Tracking Platform" class="project-img">
+                            </div>
+                            <button class="carousel-btn prev-btn" data-carousel-btn="prev" aria-label="Previous"><i class="ri-arrow-left-s-line"></i></button>
+                            <button class="carousel-btn next-btn" data-carousel-btn="next" aria-label="Next"><i class="ri-arrow-right-s-line"></i></button>
+                            <div class="carousel-dots"></div>
+                        </div>
                         <div class="project-overlay">
                             <span class="project-type-tag"><i class="ri-app-store-line"></i> Web & Mobile System</span>
                         </div>
@@ -270,7 +284,7 @@
                             <span class="tech-badge">NFC</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://www.say-whaat.vercel.app" target="_blank" class="project-link-btn"><i class="ri-external-link-line"></i> Live Demo</a>
+                            <a href="https://www.saywhaat.in/" target="_blank" class="project-link-btn"><i class="ri-external-link-line"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -278,7 +292,14 @@
                 <!-- Project 3: Frontier ESPI -->
                 <div class="glass-panel project-card">
                     <div class="project-img-wrapper">
-                        <img src="./images/projects/frontiersespi.png" alt="Frontier ESPI Journal Portal" class="project-img">
+                        <div class="project-carousel" data-carousel>
+                            <div class="project-carousel-slides">
+                                <img src="./images/projects/journal_management.png" alt="Frontier ESPI Journal Portal" class="project-img">
+                            </div>
+                            <button class="carousel-btn prev-btn" data-carousel-btn="prev" aria-label="Previous"><i class="ri-arrow-left-s-line"></i></button>
+                            <button class="carousel-btn next-btn" data-carousel-btn="next" aria-label="Next"><i class="ri-arrow-right-s-line"></i></button>
+                            <div class="carousel-dots"></div>
+                        </div>
                         <div class="project-overlay">
                             <span class="project-type-tag"><i class="ri-pages-line"></i> Web Application</span>
                         </div>
@@ -313,7 +334,14 @@
                 <!-- Project 4: College Website -->
                 <div class="glass-panel project-card">
                     <div class="project-img-wrapper">
-                        <img src="./images/projects/college_website.png" alt="College Website Management System" class="project-img">
+                        <div class="project-carousel" data-carousel>
+                            <div class="project-carousel-slides">
+                                <img src="./images/projects/college_management.png" alt="College Website Management System" class="project-img">
+                            </div>
+                            <button class="carousel-btn prev-btn" data-carousel-btn="prev" aria-label="Previous"><i class="ri-arrow-left-s-line"></i></button>
+                            <button class="carousel-btn next-btn" data-carousel-btn="next" aria-label="Next"><i class="ri-arrow-right-s-line"></i></button>
+                            <div class="carousel-dots"></div>
+                        </div>
                         <div class="project-overlay">
                             <span class="project-type-tag"><i class="ri-macbook-line"></i> Portal Platform</span>
                         </div>
@@ -348,7 +376,14 @@
                 <!-- Project 5: Smart Attendance -->
                 <div class="glass-panel project-card">
                     <div class="project-img-wrapper">
-                        <img src="./images/projects/smart_attendance.png" alt="Smart Attendance System with Real-Time Face Recognition" class="project-img">
+                        <div class="project-carousel" data-carousel>
+                            <div class="project-carousel-slides">
+                                <img src="./images/projects/smart_attendance.png" alt="Smart Attendance System with Real-Time Face Recognition" class="project-img">
+                            </div>
+                            <button class="carousel-btn prev-btn" data-carousel-btn="prev" aria-label="Previous"><i class="ri-arrow-left-s-line"></i></button>
+                            <button class="carousel-btn next-btn" data-carousel-btn="next" aria-label="Next"><i class="ri-arrow-right-s-line"></i></button>
+                            <div class="carousel-dots"></div>
+                        </div>
                         <div class="project-overlay">
                             <span class="project-type-tag"><i class="ri-eye-line"></i> Computer Vision</span>
                         </div>
@@ -556,6 +591,103 @@
                 navLinks.classList.remove('nav-active');
                 if (navToggle) navToggle.classList.remove('toggle-active');
             });
+        });
+
+        // Dynamic Interactive Carousel Controller
+        document.querySelectorAll('[data-carousel]').forEach(carousel => {
+            const slidesContainer = carousel.querySelector('.project-carousel-slides');
+            const nextBtn = carousel.querySelector('[data-carousel-btn="next"]');
+            const prevBtn = carousel.querySelector('[data-carousel-btn="prev"]');
+            const dotsContainer = carousel.querySelector('.carousel-dots');
+            
+            let activeIndex = 0;
+            
+            function getSlides() {
+                return Array.from(slidesContainer.children);
+            }
+            
+            function initCarousel() {
+                const slides = getSlides();
+                const slideCount = slides.length;
+                
+                // Show/hide navigation based on number of slides
+                if (slideCount <= 1) {
+                    if (nextBtn) nextBtn.style.display = 'none';
+                    if (prevBtn) prevBtn.style.display = 'none';
+                    if (dotsContainer) dotsContainer.style.display = 'none';
+                    return;
+                }
+                
+                if (nextBtn) nextBtn.style.display = 'flex';
+                if (prevBtn) prevBtn.style.display = 'flex';
+                if (dotsContainer) dotsContainer.style.display = 'flex';
+                
+                // Create Dots dynamically
+                dotsContainer.innerHTML = '';
+                slides.forEach((_, index) => {
+                    const dot = document.createElement('span');
+                    dot.classList.add('carousel-dot');
+                    if (index === activeIndex) dot.classList.add('active');
+                    dot.addEventListener('click', () => goToSlide(index));
+                    dotsContainer.appendChild(dot);
+                });
+            }
+            
+            function updateCarousel() {
+                const slides = getSlides();
+                const slideCount = slides.length;
+                if (slideCount <= 1) return;
+                
+                // Slide translation
+                slidesContainer.style.transform = `translateX(-${activeIndex * 100}%)`;
+                
+                // Update dots active class
+                const dots = Array.from(dotsContainer.children);
+                dots.forEach((dot, index) => {
+                    if (index === activeIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+            
+            function goToSlide(index) {
+                activeIndex = index;
+                updateCarousel();
+            }
+            
+            function showNext() {
+                const slideCount = getSlides().length;
+                activeIndex = (activeIndex + 1) % slideCount;
+                updateCarousel();
+            }
+            
+            function showPrev() {
+                const slideCount = getSlides().length;
+                activeIndex = (activeIndex - 1 + slideCount) % slideCount;
+                updateCarousel();
+            }
+            
+            nextBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                showNext();
+            });
+            
+            prevBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                showPrev();
+            });
+            
+            // Watch for dynamic DOM additions inside the slides container (in case user appends images dynamically)
+            const observer = new MutationObserver(() => {
+                activeIndex = 0;
+                initCarousel();
+                updateCarousel();
+            });
+            observer.observe(slidesContainer, { childList: true });
+            
+            initCarousel();
         });
     </script>
 </body>
